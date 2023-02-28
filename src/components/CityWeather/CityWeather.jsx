@@ -1,14 +1,15 @@
 import { Typography } from '@mui/material';
 import { useSelector } from 'react-redux';
+import { Outlet, Link } from 'react-router-dom';
 
 import { getCityWeather } from 'redux/weather/weather-selectors';
 
-export const CityWeather = () => {
+export const CityWeather = ({ originalCity }) => {
   const cityWeather = useSelector(getCityWeather);
 
   return (
     <>
-      <Typography variant="h2">Weather</Typography>
+      <Typography variant="h2">Weather in {originalCity}</Typography>
       <ul>
         <li>
           Geo coords: [{cityWeather?.coord?.lon}, {cityWeather?.coord?.lat}]
@@ -32,6 +33,8 @@ export const CityWeather = () => {
         <li>Name: {cityWeather?.name}</li>
         <li>Cod: {cityWeather?.cod}</li>
       </ul>
+      <Link to={`/weather/${originalCity}/details`}>View Details</Link>
+      <Outlet />
     </>
   );
 };

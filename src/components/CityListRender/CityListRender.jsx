@@ -6,12 +6,13 @@ import {
   getIsLoadingWeather,
 } from 'redux/weather/weather-selectors';
 
-export const CityListRender = () => {
+export const CityListRender = ({ setOriginalCity }) => {
   const dispatch = useDispatch();
   const cityNames = useSelector(getCities);
   const isLoading = useSelector(getIsLoadingWeather);
 
   const onClickHandler = (event, cityName) => {
+    setOriginalCity(cityName);
     const coordinates = {
       lat: event.target.dataset.lat,
       lon: event.target.dataset.lon,
