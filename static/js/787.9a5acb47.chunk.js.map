@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/787.9a5acb47.chunk.js","mappings":"mIAIA,UAJuB,WACrB,OAAO,uCACR,C","sources":["pages/WeatherDetails/WeatherDetails.jsx"],"sourcesContent":["const WeatherDetails = () => {\n  return <>aaaaa</>;\n};\n\nexport default WeatherDetails;\n"],"names":[],"sourceRoot":""}
