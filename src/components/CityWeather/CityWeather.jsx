@@ -71,7 +71,7 @@ export const CityWeather = ({ originalCity }) => {
           backgroundRepeat: 'no-repeat',
           display: 'flex',
           color: 'white',
-          textShadow: '0 0 6px black',
+          textShadow: '0 0 4px black',
           fontSize: '25px',
           justifyContent: 'space-evenly',
           marginBottom: theme.spacing(2),
