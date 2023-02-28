@@ -6,7 +6,6 @@ import { getCityWeather } from 'redux/weather/weather-selectors';
 
 const Weather = () => {
   const cityWeather = useSelector(getCityWeather);
-  console.log(cityWeather);
 
   return (
     <>

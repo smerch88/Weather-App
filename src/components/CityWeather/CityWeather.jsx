@@ -1,5 +1,6 @@
 import { Typography } from '@mui/material';
 import { useSelector } from 'react-redux';
+
 import { getCityWeather } from 'redux/weather/weather-selectors';
 
 export const CityWeather = () => {
