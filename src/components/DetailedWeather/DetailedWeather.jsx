@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { Typography, List } from '@mui/material';
+
 import { BackLink } from 'components/BackLink/BackLink';
 import { formatTemperature } from 'components/CityWeather/CityWeather';
 import { RenderWeatherDataItem } from 'components/CityWeather/RenderWeatherDataItem';
+
 import { useSelector } from 'react-redux';
 import { useLocation, useParams } from 'react-router-dom';
 

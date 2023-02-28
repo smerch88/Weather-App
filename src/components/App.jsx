@@ -1,9 +1,10 @@
 import { lazy } from 'react';
-import { Layout } from './Layout';
 import { Route, Routes } from 'react-router-dom';
-import { ThemeProvider } from '@emotion/react';
-import { CssBaseline } from '@mui/material';
+
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import { theme } from 'styles/theme';
+
+import { Layout } from './Layout';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 
 const WeatherPage = lazy(() => import('../pages/Weather/Weather'));

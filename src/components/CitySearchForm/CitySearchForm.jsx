@@ -1,9 +1,11 @@
-import { useTheme } from '@emotion/react';
+import { useTheme } from '@mui/material';
 import { Box, Button, CircularProgress, TextField } from '@mui/material';
-import { useFormik } from 'formik';
+
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchGetCityCoordinates } from 'redux/weather/weather-operations';
 import { getIsLoadingCities } from 'redux/weather/weather-selectors';
+
+import { useFormik } from 'formik';
 import * as yup from 'yup';
 
 const validationSchema = yup.object({

@@ -6,6 +6,7 @@ import {
   ListItemText,
   Typography,
 } from '@mui/material';
+
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchGetCordinatesWeather } from 'redux/weather/weather-operations';
 import {

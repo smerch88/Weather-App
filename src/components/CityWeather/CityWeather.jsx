@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import {
   Typography,
   Link,
@@ -7,9 +6,12 @@ import {
   Button,
   useTheme,
 } from '@mui/material';
+
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+
 import { getCityWeather } from 'redux/weather/weather-selectors';
+
 import { RenderWeatherDataItem } from './RenderWeatherDataItem';
 import { MapWithMarker } from 'components/MapWithMarker/MapWithMarker';
 
@@ -114,8 +116,4 @@ export const CityWeather = ({ originalCity }) => {
       <MapWithMarker lat={cityWeather.coord.lat} lon={cityWeather.coord.lon} />
     </>
   );
-};
-
-CityWeather.propTypes = {
-  originalCity: PropTypes.string.isRequired,
 };
