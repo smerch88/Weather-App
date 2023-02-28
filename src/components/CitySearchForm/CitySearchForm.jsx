@@ -1,7 +1,7 @@
-import { Button, CircularProgress, TextField } from '@mui/material';
+import { useTheme } from '@emotion/react';
+import { Box, Button, CircularProgress, TextField } from '@mui/material';
 import { useFormik } from 'formik';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 import { fetchGetCityCoordinates } from 'redux/weather/weather-operations';
 import { getIsLoadingCities } from 'redux/weather/weather-selectors';
 import * as yup from 'yup';
@@ -15,13 +15,13 @@ const validationSchema = yup.object({
 export const CitySearchForm = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector(getIsLoadingCities);
-  const navigate = useNavigate();
+  const theme = useTheme();
 
   const formik = useFormik({
     initialValues: {
-      city: 'Kyiv',
+      city: '',
       state: '',
-      country: 'Ukraine',
+      country: '',
     },
     validationSchema: validationSchema,
     onSubmit: values => {
@@ -31,38 +31,46 @@ export const CitySearchForm = () => {
         country: values.country,
       };
       dispatch(fetchGetCityCoordinates(cityName));
-      navigate(`/weather/${values.city}`); // add the city name to the route
     },
   });
 
   return (
     <>
-      <form onSubmit={formik.handleSubmit}>
+      <Box
+        component="form"
+        onSubmit={formik.handleSubmit}
+        sx={{
+          gap: 1,
+        }}
+      >
         <TextField
+          sx={{ marginBottom: theme.spacing(1) }}
           fullWidth
           id="city"
           name="city"
-          label="city"
+          label="City"
           value={formik.values.city}
           onChange={formik.handleChange}
           error={formik.touched.city && Boolean(formik.errors.city)}
           helperText={formik.touched.city && formik.errors.city}
         />
         <TextField
+          sx={{ marginBottom: theme.spacing(1) }}
           fullWidth
           id="state"
           name="state"
-          label="state"
+          label="State"
           value={formik.values.state}
           onChange={formik.handleChange}
           error={formik.touched.state && Boolean(formik.errors.state)}
           helperText={formik.touched.state && formik.errors.state}
         />
         <TextField
+          sx={{ marginBottom: theme.spacing(1) }}
           fullWidth
           id="country"
           name="country"
-          label="country"
+          label="Country"
           value={formik.values.country}
           onChange={formik.handleChange}
           error={formik.touched.country && Boolean(formik.errors.country)}
@@ -91,7 +99,7 @@ export const CitySearchForm = () => {
             />
           )}
         </Button>
-      </form>
+      </Box>
     </>
   );
 };
