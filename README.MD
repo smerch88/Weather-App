@@ -8,18 +8,7 @@
 
 <p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.</p>
 
-<h3>Installing</h3>
-
-<p>A step by step guide on how to get the development environment running.</p>
-
-<p>Clone repository or get the copy in any other way.</p>
-
-<pre>
-<code>npm i</code>
-<code>npm start</code>
-</pre>
-
-<p>create .env file in folder with pacjake.json </p>
+<h3>create .env file in folder with package.json </h3>
 
 ![Creating dotenv file](./assets/dotenv.jpg)
 
@@ -31,6 +20,17 @@
 
 <p>Register and take</p>
 <a href="https://home.openweathermap.org/">API KEY</a>
+
+<h3>Installing</h3>
+
+<p>A step by step guide on how to get the development environment running.</p>
+
+<p>Clone repository or get the copy in any other way.</p>
+
+<pre>
+<code>npm i</code>
+<code>npm start</code>
+</pre>
 
 <h2>Built With</h2>
 
