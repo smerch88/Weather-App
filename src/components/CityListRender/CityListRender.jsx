@@ -1,19 +1,15 @@
 import { Button, CircularProgress } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { fetchGetCordinatesWeather } from 'redux/weather/weather-operations';
 import {
   getCities,
   getIsLoadingWeather,
 } from 'redux/weather/weather-selectors';
 
-import { useNavigate } from 'react-router-dom';
-
 export const CityListRender = () => {
   const dispatch = useDispatch();
   const cityNames = useSelector(getCities);
   const isLoading = useSelector(getIsLoadingWeather);
-  const navigate = useNavigate();
 
   const onClickHandler = (event, cityName) => {
     const coordinates = {
@@ -22,7 +18,6 @@ export const CityListRender = () => {
       units: event.target.dataset.units,
     };
     dispatch(fetchGetCordinatesWeather(coordinates));
-    navigate(`/weather/${cityName}`); // add the city name to the route
   };
 
   return (
@@ -60,7 +55,6 @@ export const CityListRender = () => {
                 />
               )}
             </Button>
-            <Link to={`${item.name}`}>Link</Link>
           </li>
         ))}
     </ul>

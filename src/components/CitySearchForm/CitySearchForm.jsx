@@ -1,6 +1,7 @@
 import { Button, CircularProgress, TextField } from '@mui/material';
 import { useFormik } from 'formik';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { fetchGetCityCoordinates } from 'redux/weather/weather-operations';
 import { getIsLoadingCities } from 'redux/weather/weather-selectors';
 import * as yup from 'yup';
@@ -14,6 +15,7 @@ const validationSchema = yup.object({
 export const CitySearchForm = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector(getIsLoadingCities);
+  const navigate = useNavigate();
 
   const formik = useFormik({
     initialValues: {
@@ -29,6 +31,7 @@ export const CitySearchForm = () => {
         country: values.country,
       };
       dispatch(fetchGetCityCoordinates(cityName));
+      navigate(`/weather/${values.city}`); // add the city name to the route
     },
   });
 
