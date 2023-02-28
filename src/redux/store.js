@@ -14,7 +14,7 @@ import { citiesReducer } from './weather/weather-slice';
 
 const persistConfig = {
   key: 'cities',
-  whitelist: ['cities'],
+  whitelist: ['cities', 'cityWeather'],
   storage,
 };
 
