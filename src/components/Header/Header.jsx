@@ -28,14 +28,14 @@ export const Header = () => {
     <List>
       <ListItem disablePadding>
         <ListItemButton component={Link} to="/">
-          <ListItemText primary="Home" />
-          <HomeOutlinedIcon sx={{ marginLeft: '20px' }} />
+          <HomeOutlinedIcon sx={{ marginRight: '40px' }} />
+          <ListItemText primary="Home" sx={{ marginRight: '40px' }} />
         </ListItemButton>
       </ListItem>
       <ListItem disablePadding>
         <ListItemButton component={Link} to="/weather">
-          <ListItemText primary="Weather" />
-          <WbSunnyOutlinedIcon sx={{ marginLeft: '40px' }} />
+          <WbSunnyOutlinedIcon sx={{ marginRight: '40px' }} />
+          <ListItemText primary="Weather" sx={{ marginRight: '40px' }} />
         </ListItemButton>
       </ListItem>
     </List>
@@ -60,7 +60,7 @@ export const Header = () => {
           </StyledToolbar>
         </Container>
       </AppBar>
-      <Drawer anchor="left" open={isMenuOpen} onClose={toggleMenu}>
+      <Drawer anchor="top" open={isMenuOpen} onClose={toggleMenu}>
         {menu}
       </Drawer>
     </>
