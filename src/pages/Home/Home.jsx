@@ -1,5 +1,7 @@
 import { Container, Typography } from '@mui/material';
 
+import video from '../../images/preview.mp4';
+
 const Home = () => {
   return (
     <>
@@ -69,6 +71,13 @@ const Home = () => {
           read this, and feel very uncomfortable, I would be very happy about
           cooperating on finishing this app.
         </Typography>
+        <Typography variant="h4" component="h2" mb>
+          Demo:
+        </Typography>
+        <video width="100%" controls>
+          <source src={video} type="video/mp4" />
+        </video>
+        <br />
       </Container>
     </>
   );
