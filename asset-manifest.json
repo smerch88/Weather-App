@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.js": "/Weather-App/static/js/main.2c4c3376.js",
+    "main.js": "/Weather-App/static/js/main.a43c410d.js",
     "static/css/393.05125bc7.chunk.css": "/Weather-App/static/css/393.05125bc7.chunk.css",
     "static/js/393.1caae911.chunk.js": "/Weather-App/static/js/393.1caae911.chunk.js",
-    "static/js/544.be00355e.chunk.js": "/Weather-App/static/js/544.be00355e.chunk.js",
+    "static/js/544.ae44c866.chunk.js": "/Weather-App/static/js/544.ae44c866.chunk.js",
     "static/css/344.05125bc7.chunk.css": "/Weather-App/static/css/344.05125bc7.chunk.css",
     "static/js/344.6b007a41.chunk.js": "/Weather-App/static/js/344.6b007a41.chunk.js",
     "static/js/653.fa7b98a0.chunk.js": "/Weather-App/static/js/653.fa7b98a0.chunk.js",
     "static/js/982.28f790c1.chunk.js": "/Weather-App/static/js/982.28f790c1.chunk.js",
+    "static/media/preview.mp4": "/Weather-App/static/media/preview.507905414134a9677c49.mp4",
     "static/media/climate_change_map.gif": "/Weather-App/static/media/climate_change_map.178d280ba756d35bf0b0.gif",
     "static/media/bgWeatherCard.jpg": "/Weather-App/static/media/bgWeatherCard.8754c73ccbdc7eb09863.jpg",
     "index.html": "/Weather-App/index.html",
-    "main.2c4c3376.js.map": "/Weather-App/static/js/main.2c4c3376.js.map",
+    "main.a43c410d.js.map": "/Weather-App/static/js/main.a43c410d.js.map",
     "393.05125bc7.chunk.css.map": "/Weather-App/static/css/393.05125bc7.chunk.css.map",
     "393.1caae911.chunk.js.map": "/Weather-App/static/js/393.1caae911.chunk.js.map",
-    "544.be00355e.chunk.js.map": "/Weather-App/static/js/544.be00355e.chunk.js.map",
+    "544.ae44c866.chunk.js.map": "/Weather-App/static/js/544.ae44c866.chunk.js.map",
     "344.05125bc7.chunk.css.map": "/Weather-App/static/css/344.05125bc7.chunk.css.map",
     "344.6b007a41.chunk.js.map": "/Weather-App/static/js/344.6b007a41.chunk.js.map",
     "653.fa7b98a0.chunk.js.map": "/Weather-App/static/js/653.fa7b98a0.chunk.js.map",
     "982.28f790c1.chunk.js.map": "/Weather-App/static/js/982.28f790c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.2c4c3376.js"
+    "static/js/main.a43c410d.js"
   ]
 }
