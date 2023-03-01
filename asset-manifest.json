@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Weather-App/static/js/main.a67def76.js",
+    "main.js": "/Weather-App/static/js/main.2c4c3376.js",
     "static/css/393.05125bc7.chunk.css": "/Weather-App/static/css/393.05125bc7.chunk.css",
     "static/js/393.1caae911.chunk.js": "/Weather-App/static/js/393.1caae911.chunk.js",
     "static/js/544.be00355e.chunk.js": "/Weather-App/static/js/544.be00355e.chunk.js",
@@ -11,7 +11,7 @@
     "static/media/climate_change_map.gif": "/Weather-App/static/media/climate_change_map.178d280ba756d35bf0b0.gif",
     "static/media/bgWeatherCard.jpg": "/Weather-App/static/media/bgWeatherCard.8754c73ccbdc7eb09863.jpg",
     "index.html": "/Weather-App/index.html",
-    "main.a67def76.js.map": "/Weather-App/static/js/main.a67def76.js.map",
+    "main.2c4c3376.js.map": "/Weather-App/static/js/main.2c4c3376.js.map",
     "393.05125bc7.chunk.css.map": "/Weather-App/static/css/393.05125bc7.chunk.css.map",
     "393.1caae911.chunk.js.map": "/Weather-App/static/js/393.1caae911.chunk.js.map",
     "544.be00355e.chunk.js.map": "/Weather-App/static/js/544.be00355e.chunk.js.map",
@@ -21,6 +21,6 @@
     "982.28f790c1.chunk.js.map": "/Weather-App/static/js/982.28f790c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.a67def76.js"
+    "static/js/main.2c4c3376.js"
   ]
 }
