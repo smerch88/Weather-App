@@ -1,7 +1,5 @@
 import {
   AppBar,
-  Box,
-  Button,
   Container,
   IconButton,
   Typography,
@@ -59,14 +57,6 @@ export const Header = () => {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               Weather App
             </Typography>
-            <Box mr={3}>
-              <Button color="inherit" variant="outlined">
-                Log In
-              </Button>
-            </Box>
-            <Button color="secondary" variant="contained">
-              Sign Up
-            </Button>
           </StyledToolbar>
         </Container>
       </AppBar>
