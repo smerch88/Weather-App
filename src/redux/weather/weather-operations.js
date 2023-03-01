@@ -7,6 +7,11 @@ export const fetchGetCityCoordinates = createAsyncThunk(
   async (cityName, thunkApi) => {
     try {
       const res = await getCityCoordinates(cityName);
+      if (res.code === 'ERR_BAD_REQUEST') {
+        throw new Error(
+          `Failed to fetch weather data, status code: ${res.response.data.message}`
+        );
+      }
       Notify.success('OK');
       return res;
     } catch (error) {
@@ -21,6 +26,11 @@ export const fetchGetCordinatesWeather = createAsyncThunk(
   async (coordinates, thunkApi) => {
     try {
       const res = await getCordinatesWeather(coordinates);
+      if (res.code === 'ERR_BAD_REQUEST') {
+        throw new Error(
+          `Failed to fetch weather data, status code: ${res.response.data.message}`
+        );
+      }
       Notify.success('OK');
       return res;
     } catch (error) {

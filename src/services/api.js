@@ -17,6 +17,7 @@ export const getCityCoordinates = async ({ city, state, country }) => {
     }
     return data;
   } catch (error) {
+    console.log(error);
     return error;
   }
 };
@@ -31,6 +32,7 @@ export const getCordinatesWeather = async ({ lat, lon, units }) => {
     }
     return data;
   } catch (error) {
+    console.log(error);
     return error;
   }
 };
